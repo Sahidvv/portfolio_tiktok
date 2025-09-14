@@ -1,0 +1,37 @@
+:root {
+  --color-primary: #6a0dad;
+  --color-secondary: #ffffff;
+  --bg-light: #f0f0f0;
+  --bg-dark: #121212;
+  --text-primary: #333333;
+  --text-secondary: #cccccc;
+  --hover-primary: #00ffff;
+  --transition-speed: 0.3s;
+}
+
+[data-theme='light'] {
+  --background: var(--bg-light);
+  --text: var(--text-primary);
+  --navbar-bg: var(--color-secondary);
+  --navbar-text: var(--text-primary);
+  --card-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+  --background: var(--bg-dark);
+  --text: var(--text-secondary);
+  --navbar-bg: var(--background);
+  --navbar-text: var(--text);
+  --card-bg: #1a1a1a;
+}
+.social-links-container {
+  margin-bottom: 3rem; /* Ajusta el valor según lo necesites */
+}
+#tsparticles {
+  position: fixed;    /* Permite que se mantenga fijo en el viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Evita que interfiera con clics */
+}
